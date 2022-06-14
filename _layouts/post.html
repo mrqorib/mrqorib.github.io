@@ -8,11 +8,14 @@ layout: page
     <p class="meta">
       {{ page.venue }}
     </p>
-    {% if page.pdf %}
     <p class="subtitle">
-      <a href="{{ post.pdf }}">[PDF]</a>
-    </p>
+    {% if page.pdf %}
+      <a href="{{site.baseurl}}/assets/pdf/{{ page.pdf }}" target="_blank" class="artifact">[PDF]</a>
     {% endif %}
+    {% if page.code %}
+      <a href="{{ page.code }}" target="_blank" class="artifact">[CODE]</a>
+    {% endif %}
+    </p>
   </section>
   <section class="post-content">
     {{ content }}

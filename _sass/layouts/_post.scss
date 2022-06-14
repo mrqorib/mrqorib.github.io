@@ -18,6 +18,15 @@
     .post-content{
         overflow: hidden;
         margin-bottom: 100px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    .artifact{
+        margin : 10px 0px;
+        font-size: 0.85rem;
+    }
+    .artifact:hover{
+        color: $theme-color;
     }
 }
 .top-btn{
