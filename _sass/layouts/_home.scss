@@ -1,9 +1,6 @@
 #home {
     #aside{
         display:block;
-        @media (max-width: 991px) {
-           display: none;
-        }
     }
     #header-nav, #header-content, .bg{
         display:none;
