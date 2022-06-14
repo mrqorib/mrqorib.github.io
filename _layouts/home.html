@@ -24,16 +24,24 @@ layout: default
             <div class="text-warp">
               <h3 class="title">{{ post.title }}</h3>
               <p class="excerpt">
-                {% if post.excerpt.size > 50 %}
-                {{ post.excerpt | strip_html | strip_newlines | truncatewords: 25, '...' }}
-                {% else %}
                 {{ post.subtitle }}
-                {% endif %}
               </p>
               <div>
                 <span class="meta">
-                  {{ post.date | date: "%B %-d, %Y" }}
+                  {{ post.venue }}
                 </span>
+                <p>
+                  {% if post.pdf %}
+                  <span class="artifact">
+                    <a href="{{site.baseurl}}/assets/pdf/{{ post.pdf }}" target="_blank" class="artifact">[PDF]</a>
+                  </span>
+                  {% endif %}
+                  {% if post.code %}
+                  <span class="artifact">
+                    <a href="{{ post.code }}" target="_blank" class="artifact">[CODE]</a>
+                  </span>
+                  {% endif %}
+                </p>
                 <ul class="tag-wrap">
                   {% for tag in post.tags %}
                   <a href="{{site.baseurl}}/tags#{{ tag | cgi_escape }}">

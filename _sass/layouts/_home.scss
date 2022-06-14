@@ -59,6 +59,13 @@
                     .excerpt{
                         margin : 10px 0px;
                     }
+                    .artifact{
+                        margin : 10px 0px;
+                        font-size: 0.75rem;
+                    }
+                    .artifact:hover{
+                        color: $theme-color;
+                    }
                     .meta {
                         color : $text-gray;
                         font-size: 0.85rem;

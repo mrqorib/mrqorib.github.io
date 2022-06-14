@@ -1,33 +1,27 @@
 # Site Settings
 baseurl: ""
-url : "https://naye0ng.github.io"
+url : "https://mrqorib.github.io"
 
 # Blog Settings
 theme_settings :
-  title : Grape Theme
+  title : M. Reza Qorib
   favicon : assets/favicon.ico
 
   # Profile Settings
   profile :
-    image : assets/img/smile.png
-    username : Nayeong Kim
-    description : creator of Grape-Theme! Grape-Theme is my first jekyll theme and you can customize this theme easily.
-    experience :
-      - start : 2017-05-03
-        end : 2018-05-06
-        experience : company name, title
-    skills : 
-      - skill : HTML5 & CSS
-        value : 85  # Percent value
+    image : assets/img/square.jpg
+    username : M. Reza Qorib
+    description : Reza is a PhD student in the Department of Computer Science, National University of Singapore. He received his bachelor’s degree in computer science from Universitas Indonesia in 2018. His research area is Natural Language Processing (NLP), with the current focus on Grammatical Error Correction.
+    email : mrqorib [at] u.nus.edu
         
   # Icons
   icons :
     email:  # Full email address, e.g. "sample@google.com"
-    linkedin:  # Full URL 
-    github: naye0ng
+    google_scholar: https://scholar.google.com/citations?user=bSW0QS0AAAAJ&hl=en
+    github: mrqorib
+    linkedin:  https://linkedin.com/in/rezaqorib 
     gitlab: 
     bitbucket: 
-    google_plus:
     twitter:
     youtube:
     facebook:
@@ -44,6 +38,6 @@ paginate_path: "blog/page:num"
 sass:
   sass_dir: _sass
   style: :compressed
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 bootstrap:
   assets: true

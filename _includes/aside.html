@@ -1,13 +1,12 @@
 <!-- User Profile -->
 <div id="profile">
   {% assign profile = site.theme_settings.profile %}
-  <a href="{{ site.baseurl }}/portfolio">
-    <div class="img-wrap">
+  <div class="img-wrap">
       <img src="{{ site.baseurl }}/{{ profile.image }}" alt="profile-image">
-    </div>
-  </a>
-  <p class="username">{{ profile.username }}</p>
+  </div>
+  <h3 class="username">{{ profile.username }}</h3>
   <p class="description">{{ profile.description }}</p>
+  <p class="email">{{ profile.email }}</p>
 
   <!-- Social icons from Font Awesome -->
   <ul id="icons">
@@ -16,29 +15,12 @@
 </div>
 <!-- Tag Navigation -->
 <div id="tag-wrap">
-  <a href="{{ site.url }}/tags">
-    <p class="title">TAGS</p>
-  </a>
-  {% for tag in site.tags %}
+  <p class="username">Research Topics</p>
+  {% capture first_tags %}{% for tag in site.tags %}{{ tag[0] }}{% unless forloop.last %}|{% endunless %}{% endfor %}{% endcapture %}
+  {% assign recent_tags = first_tags | split: '|' | reverse %}
+  {% for tag in recent_tags %}
   <a href="{{site.baseurl}}/tags#{{ tag | first | cgi_encode }}">
-    <span class="tag">{{ tag | first }}</span>
+    <span class="tag">{{ tag }}</span>
   </a>
   {% endfor %}
-</div>
-<!-- Project -->
-<div id="proj-wrap">
-  <a href="{{ site.url }}/portfolio#projects">
-    <p class="title">PROJECTS 🙋🏻 </p>
-    <hr class="proj-hr">
-    {% for _ in site.data.projects %}
-    {% assign project = _.project %}
-    {% if project.print %}
-    <div class="proj-content">
-      <div class="proj-title">{{ project.title }}</div>
-      <div class="meta">{{ project.date }}</div>
-    </div>
-    <hr class="proj-hr">
-    {% endif %}
-    {% endfor %}
-  </a>
 </div>
