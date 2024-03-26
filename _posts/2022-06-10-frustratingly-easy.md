@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Frustratingly Easy System Combination for Grammatical Error Correction
-subtitle : Muhammad Reza Qorib, Seung-Hoon Na, and Hwee Tou Ng
+subtitle : Muhammad Reza Qorib, Seung-Hoon Na, Hwee Tou Ng
 venue: Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL). 2022
 tags: [Grammatical Error Correction]
 pdf: ESC.pdf

@@ -34,9 +34,9 @@
             width: 100%;
             overflow: hidden;
             border-bottom: 1px solid rgba(0,0,0,0.1);
-            padding: 15px 0px;
+            padding: 5px 0px;
             .post-wrap{
-                margin : 25px;
+                margin : 15px;
                 margin-left : 45px;
                 .text-warp {
                     display: inline-block;
@@ -54,10 +54,10 @@
                         height: 100%;
                     }
                     .excerpt{
-                        margin : 10px 0px;
+                        margin : 5px 0px;
                     }
                     .artifact{
-                        margin : 10px 0px;
+                        margin : 5px 0px;
                         font-size: 0.75rem;
                     }
                     .artifact:hover{

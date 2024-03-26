@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building MEDISCO; Indonesian Speech Corpus for Medical Domain
+title: "Building MEDISCO: Indonesian Speech Corpus for Medical Domain"
 subtitle : Muhammad Reza Qorib and Mirna Adriani
 venue: International Conference on Asian Language Processing (IALP). 2018
 tags: [Speech Recognition]
