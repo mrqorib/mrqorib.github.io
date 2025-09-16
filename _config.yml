@@ -11,7 +11,7 @@ theme_settings :
   profile :
     image : assets/img/square.jpg
     username : M. Reza Qorib
-    description : Reza is a PhD student in the Department of Computer Science, National University of Singapore. He received his bachelor’s degree in computer science from Universitas Indonesia in 2018. His research area is Natural Language Processing (NLP), with the current focus on Grammatical Error Correction.
+    description : Reza is a research fellow at the National University of Singapore. He completed his PhD at NUS under Professor Hwee Tou Ng, focusing on system combinations and mixtures of experts for grammatical error correction. His current research explores the multilinguality of large language models. He actively contributes to the community through the SEACrowd projects and by serving as a reviewer for ACL Rolling Review as well as other NLP conferences and journals.
     email : mrqorib [at] u.nus.edu
         
   # Icons
