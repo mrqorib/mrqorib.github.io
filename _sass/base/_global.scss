@@ -122,6 +122,10 @@ a:link, a:visited, a:active, a:hover {
 	font-size: 0.85rem;
 	line-height: 35px;
 	letter-spacing: -0.03rem;
+	.meta{
+		vertical-align: super;
+		font-size: 0.625rem;
+	}
 }
 .tag:hover {
 	background-color: $theme-dark2;
