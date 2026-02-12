@@ -18,13 +18,15 @@
   <p class="username">Research Topics</p>
   {% capture first_tags %}{% for tag in site.tags %}{{ tag[0] }}{% unless forloop.last %}|{% endunless %}{% endfor %}{% endcapture %}
   {% assign recent_tags = first_tags | split: '|' | reverse %}
+  <ul class="tag-cloud">
   {% for tag in recent_tags %}
   <a href="{{site.baseurl}}/tags#{{ tag | first | cgi_encode }}">
-    <div class="tag"
-        style="background-color: rgba(101, 96, 78, {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 50 | divided_by: 100.0}})">
+    <li class="tag"
+        style="background-color: rgba(101, 96, 78, {{ site.tags[tag] | size | times: 100 | divided_by: site.tags.size | plus: 50 | divided_by: 100.0}})">
         {{ tag }}
         <span class="meta">{{ site.tags[tag] | size }}</span>
-    </div>
+    </li>
   </a>
+  </ul>
   {% endfor %}
 </div>
