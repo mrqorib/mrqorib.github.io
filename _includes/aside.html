@@ -20,7 +20,9 @@
   {% assign recent_tags = first_tags | split: '|' | reverse %}
   {% for tag in recent_tags %}
   <a href="{{site.baseurl}}/tags#{{ tag | first | cgi_encode }}">
-    <span class="tag">{{ tag }}</span>
+    <span class="tag">{{ tag }}
+      <span class="meta">{{ tag | last | size }}</span>
+    </span>
   </a>
   {% endfor %}
 </div>
