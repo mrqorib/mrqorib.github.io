@@ -12,7 +12,7 @@ theme_settings :
     image : assets/img/square.jpg
     username : M. Reza Qorib
     description : Reza is a postdoctoral fellow at Carnegie Mellon University. He completed his PhD at NUS under Professor Hwee Tou Ng, focusing on system combination and mixtures of experts for grammatical error correction, and continued working as a research fellow on the multilinguality of large language models. He actively contributes to the community through the SEACrowd projects, the ACL Special Interest Group on Southeast Asian NLP (SIGSEA), and by serving as a reviewer for ACL Rolling Review, AAAI, and other NLP conferences and journals.
-    email : mrqorib [at] {cmu.edu, u.nus.edu}
+    email : mrqorib [at] cmu.edu / mrqorib [at] u.nus.edu
         
   # Icons
   icons :
