@@ -16,17 +16,12 @@
 <!-- Tag Navigation -->
 <div id="tag-wrap">
   <p class="username">Research Topics</p>
-  {% capture first_tags %}
-    {% for tag in site.tags %}
-      {{ tag[1].size | plus: 1000 }}|{{ tag | first }}
-      {% unless forloop.last %}|{% endunless %}
-    {% endfor %}
-  {% endcapture %}
-  {% assign recent_tags = first_tags | split: '|' | sort | reverse %}
+  {% capture first_tags %}{% for tag in site.tags %}{{ tag[0] }}{% unless forloop.last %}|{% endunless %}{% endfor %}{% endcapture %}
+  {% assign recent_tags = first_tags | split: '|' | reverse %}
   {% for tag in recent_tags %}
   <a href="{{site.baseurl}}/tags#{{ tag | first | cgi_encode }}">
-    <span class="tag">{{ tag | first }}
-      <span class="meta">{{ tag | last | size }}</span>
+    <span class="tag">{{ tag }}
+      <span class="meta">{{ site.tags[tag] | size }}</span>
     </span>
   </a>
   {% endfor %}

@@ -3,7 +3,7 @@ layout: post
 title: "Are Decoder-Only Language Models Better than Encoder-Only Language Models in Understanding Word Meaning?"
 subtitle : Muhammad Reza Qorib, Moon Geonsik, and Hwee Tou Ng
 venue: Findings of the Annual Meeting of the Association for Computational Linguistics (ACL). 2024
-tags: [Large Language Models]
+tags: [Word Sense Disambiguation, Large Language Models]
 pdf: Decoder-Encoder-LLM.pdf
 author: M. Reza Qorib
 comments : False
